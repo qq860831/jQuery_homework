@@ -21,7 +21,7 @@ img{
   margin-bottom: 30px;
 }
 .navbar h1 a{
-  background-image: url(../最終作業_images/logo.png);
+  background-image: url(../images/logo.png);
   width: 224px;
   height: 50px;
   /* 圖片取代文字利於SEO */
@@ -51,11 +51,11 @@ img{
   border-bottom:none;
 }
 .navbar-main .dropdown{
-  position: relative;
+  /* position: relative; */
 }
 /* 下拉式選單 */
 .navbar-main .dropdown-open{
-  display: block;
+  /* display: none; */
   position: absolute;
   top: 80px;
   color: #333;
@@ -63,13 +63,21 @@ img{
   font-size: 20px;
   /* width: 100px; */
   z-index: 100;
-  display: none;
 }
 .dropdown-open li a{
-  display: block;
+  /* display: block; */
   padding: 10px 0;
 }
 .dropdown-open a:hover{
   background-color: #00cc99;
   color: #fff;
+}
+.swiper-container{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
 }
