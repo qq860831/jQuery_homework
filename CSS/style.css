@@ -30,15 +30,46 @@ img{
   white-space: nowrap;
   overflow: hidden;
 }
-.navbar-main{
-  display: flex;
-}
-.navbar-main li a{
-  text-align: center;
-}
 .navbar li{
   display: inline-block;
 }
-.dropdown-open{
+.dropdown{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: block;
+  color: #333333;
+  border-bottom:3px solid transparent;
+}
+.dropdown:hover{
+  border-bottom: 3px solid #00cc99;
+  color: #00cc99;
+  transition: 0.3s;  
+}
+.dropdown:active{
+  color: #065f49;
+  border-bottom:none;
+}
+.navbar-main .dropdown{
+  position: relative;
+}
+/* 下拉式選單 */
+.navbar-main .dropdown-open{
+  display: block;
+  position: absolute;
+  top: 80px;
+  color: #333;
+  background-color: #c0c0c0;
+  font-size: 20px;
+  /* width: 100px; */
+  z-index: 100;
   display: none;
+}
+.dropdown-open li a{
+  display: block;
+  padding: 10px 0;
+}
+.dropdown-open a:hover{
+  background-color: #00cc99;
+  color: #fff;
 }
