@@ -1,3 +1,6 @@
+body{
+  height: 3000px;
+}
 li{
   list-style: none;
 }
@@ -50,28 +53,13 @@ img{
   color: #065f49;
   border-bottom:none;
 }
-.navbar-main .dropdown{
-  /* position: relative; */
-}
+
+
 /* 下拉式選單 */
-.navbar-main .dropdown-open{
-  /* display: none; */
-  position: absolute;
-  top: 80px;
-  color: #333;
-  background-color: #c0c0c0;
-  font-size: 20px;
-  /* width: 100px; */
-  z-index: 100;
+.dropdown-open{
+  display: none;
 }
-.dropdown-open li a{
-  /* display: block; */
-  padding: 10px 0;
-}
-.dropdown-open a:hover{
-  background-color: #00cc99;
-  color: #fff;
-}
+/* 輪播 */
 .swiper-container{
   width: 100%;
   height: 100%;
@@ -80,4 +68,59 @@ img{
   text-align: center;
   font-size: 18px;
   background-color: #fff;
+}
+.swiper-slide img{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover ;
+}
+/* Content */
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.card-group{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.card{
+  width: 30%;
+  /* height: 380px; */
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.card:hover{
+  box-shadow: 1px 3px 5px #00cc99;
+}
+.card img{
+ margin-bottom: 10px;
+ 
+}
+.card h2{
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+.card h3{
+  font-weight: 500;
+  text-indent: -30px;
+}
+.card p{
+  text-align: justify;
+  /* 文字左右對齊本文 */
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+}
+.card-rwd li{
+  list-style: disc;
+  /* 增加小黑點 */
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  text-indent: 20px;
 }
