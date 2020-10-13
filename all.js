@@ -8,6 +8,14 @@ $(document).ready(function(){
         'imageFadeDuration':1000,
     });
 
+    // go-top
+    $('.icon').click(function(e){
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        },700);
+    });
+    
     // 輪播效果
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal', 

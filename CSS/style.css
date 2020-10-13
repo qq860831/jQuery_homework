@@ -1,6 +1,3 @@
-body{
-  height: 3000px;
-}
 li{
   list-style: none;
 }
@@ -224,4 +221,28 @@ label{
 }
 .button input:hover{
   background-color:#00644b;
+}
+/* footer */
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img{
+  padding: 15px;
+}
+.logo ul{
+  margin-top: 10px;
+}
+.logo ul li{
+  line-height: 1.5;
+  padding: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.icon{
+  margin-left: 95%;
+  margin-bottom: 20px;
+  color:#22b28e;
+  cursor: pointer;
 }
