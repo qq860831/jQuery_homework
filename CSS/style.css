@@ -59,7 +59,9 @@ img{
 .dropdown-open{
   display: none;
 }
-/* 輪播 */
+
+
+/* hero */
 .swiper-container{
   width: 100%;
   height: 100%;
@@ -74,14 +76,17 @@ img{
   background-repeat: no-repeat;
   background-size:cover ;
 }
-/* Content */
-.container{
-  width: 960px;
+
+/* content */
+
+.content{
+  width: 1000px;
   margin: 0 auto;
 }
 .card-group{
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
   
 }
 .card{
@@ -99,17 +104,20 @@ img{
   box-shadow: 1px 3px 5px #00cc99;
 }
 .card img{
- margin-bottom: 10px;
- 
+ margin-bottom: 20px;
+ height: 100px;
 }
 .card h2{
   text-align: center;
-  margin-bottom: 10px;
-
+  margin-bottom: 20px;
+  font-weight:bold ;
+  font-size: 20px;
 }
 .card h3{
   font-weight: 500;
-  text-indent: -30px;
+  font-style: italic;
+  text-indent: -20px;
+  padding-bottom: 10px;
 }
 .card p{
   text-align: justify;
@@ -122,5 +130,98 @@ img{
   /* 增加小黑點 */
   line-height: 1.5;
   letter-spacing: 1.5px;
-  text-indent: 20px;
+  /* text-indent: 20px; */
+}
+
+/* table */
+
+.difference table{
+  max-width: 1000px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 20px;
+}
+.difference h2{
+  text-align: center;
+  font-size: 30px;
+  padding-top:50px ;
+}
+.difference th,td{
+  text-align: center;
+  padding: 10px;
+}
+.table-top{
+  border-top: 2px solid #ddd;
+}
+tr{
+  border-bottom: 2px solid #ddd;
+}
+th{
+  width: 300px;
+  background-color: #f7f7f7;
+  font-weight: 800;
+}
+.green{
+  color: #22b28e;
+}
+
+/* contact */
+.contact{
+  background-color:#22b28e;
+  color: #fff;
+  padding: 20px;
+  
+}
+.title{
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+}
+.data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+textarea{
+  resize: none;
+  width: 500px;
+  height: 300px;
+  border: 0;
+}
+.user{
+  display:flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.user input{
+  padding: 10px 8px;
+  margin-bottom: 15px;
+  width: 500px;
+  outline: none;
+  border: 0;
+}
+label{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+*::placeholder{
+  color: #a8a8a8;
+}
+.button{
+  display: flex;
+  background-color:#22b28e;
+  outline: none;
+  margin-left: 80%;
+  margin-top: 10px;
+}
+.button input{
+  color: #fff;
+  background-color: #00cc99;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button input:hover{
+  background-color:#00644b;
 }

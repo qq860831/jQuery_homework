@@ -1,10 +1,12 @@
 $(document).ready(function(){
-    // $('.dropdown').click(function(event){
-    //     event.preventDefault();
-    //     // 取消事件默認行為
-    //     $(this).parent().siblings().find('.dropdown-open').slideUp();
-    //     $(this).parent().find('.dropdown-open').slideToggle();
-    // });
+
+    // 燈箱(圖不大效果不明顯)
+    lightbox.option({
+        'resizeDuration':3000,
+        'wrapAround':true,
+        'fadeDuration':1000,
+        'imageFadeDuration':1000,
+    });
 
     // 輪播效果
     var mySwiper = new Swiper ('.swiper-container', {
@@ -30,5 +32,6 @@ $(document).ready(function(){
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-    })
+    });
+
 });
