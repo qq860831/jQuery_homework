@@ -53,9 +53,32 @@ img{
 
 
 /* 下拉式選單 */
-.dropdown-open{
+.menu.dropdown{
+  position: relative;
+}
+.menu .dropdown-open{
+  position: absolute;
+  top:80px;
+  display: block;
+  width: 120px;
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(95, 95, 95, 0.6);
   display: none;
 }
+
+.menu .dropdown-open a{
+  display: block;
+  width: 120px;
+  padding: 10px 0px;
+  color: #fff;
+}
+.menu .dropdown-open a:hover{
+  background-color: #00cc99;
+  color: #fff;
+}
+
 
 
 /* hero */
