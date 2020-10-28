@@ -9,30 +9,25 @@ $(document).ready(function () {
   });
   
     // 輪播效果
-    var mySwiper = new Swiper ('.swiper-container', {
-      direction: 'horizontal', // 垂直切换选项
-      loop: true, // 循环模式选项
-      effect : 'fade',
-      fadeEffect: {
-      crossFade: true,
-      },
-      autoplay: true,
-      // 如果需要分页器
-      pagination: {
-          el: '.swiper-pagination',
-        },
-      
-      // 如果需要前进后退按钮
+    var swiper = new Swiper('.swiper-container', {
+      cssMode: true,
+      autoHeight: true, //高度一樣
+      loop:true,  //循環播放 
+      slidesPerView : 'auto',
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      
-      // 如果需要滚动条
-      scrollbar: {
-        el: '.swiper-scrollbar',
+      pagination: {
+        el: '.swiper-pagination'
       },
-    })      
+      mousewheel: false,
+      keyboard: true,
+
+      autoplay: {
+        delay: 3000,
+      },
+    });     
   
   
     //回到最上方效果
@@ -41,6 +36,6 @@ $(document).ready(function () {
         e.preventDefault();
         $('html,body').animate({
           scrollTop: 0
-        },700);
+        },1000);
     });
   
