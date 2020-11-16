@@ -22,7 +22,7 @@
 <body>
     <div class="wrap">
         <!-- header -->
-        <div class="navbar">
+        <header class="navbar">
             <h1><a href="#">六角學院</a></h1>
             <ul class="menu">
                 <li><a href="#" class="dropdown"><span>首頁</span></a>
@@ -46,7 +46,7 @@
                     </ul>
                 </li>
             </ul>
-        </div>
+        </header>
 
         <!-- hero -->
         <div class="swiper-container">
@@ -105,8 +105,8 @@
                         </a>
                     </div>
                     <h2>jQuery實戰教學</h2>
+                    <h3>本課程有以下特色</h3>
                     <ul class="card-rwd">
-                        <h3>本課程有以下特色</h3>
                         <li>瞭解變數的使用方式</li>
                         <li>學習並操作DOM</li>
                         <li>學習基本數學運算方式</li>
@@ -120,48 +120,52 @@
         <div class="difference">
             <h2>線上及實體課程差異</h2>
             <table>
-                <tr class="table-top">
+                <thead>
+                    <tr class="table-top">
                     <th>項目</th>
                     <th>Hex School 線上課程</th>
                     <th>一般線上課程</th>
                     <th>實體課程</th>
                 </tr>
-                <tr>
-                    <td>費用</td>
-                    <td class="green">較低</td>
-                    <td class="green">較高</td>
-                    <td>較高</td>
-                </tr>
-                <tr>
-                    <td>學習效果</td>
-                    <td>一般</td>
-                    <td>較低</td>
-                    <td class="green">很好</td>
-                </tr>
-                <tr>
-                    <td>Code review</td>
-                    <td class="green">有</td>
-                    <td>無</td>
-                    <td>不一定</td>
-                </tr>
-                <tr>
-                    <td>課程更新速度</td>
-                    <td class="green">普通</td>
-                    <td class="green">普通</td>
-                    <td>較慢</td>
-                </tr>
-                <tr>
-                    <td>多次複習</td>
-                    <td class="green">可</td>
-                    <td>可</td>
-                    <td>不可</td>
-                </tr>
-                <tr>
-                    <td>字幕</td>
-                    <td class="green">有</td>
-                    <td>不一定</td>
-                    <td>板書</td>
-                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>費用</td>
+                        <td class="green">較低</td>
+                        <td class="green">較高</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td>較低</td>
+                        <td class="green">很好</td>
+                    </tr>
+                    <tr>
+                        <td>Code review</td>
+                        <td class="green">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr>
+                        <td>課程更新速度</td>
+                        <td class="green">普通</td>
+                        <td class="green">普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr>
+                        <td>多次複習</td>
+                        <td class="green">可</td>
+                        <td>可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr>
+                        <td>字幕</td>
+                        <td class="green">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </tbody>  
             </table>
         </div>
 
@@ -174,28 +178,30 @@
                 <div class="textarea">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
-                <div class="user">
-                    <label for="name">姓名</label>
-                    <input id="name" type="text" placeholder="輸入姓名">
-                    <label for="tel">電話</label>
-                    <input id="tel" type="tel" placeholder="09-123456">
-                    <label for="email">信箱</label>
-                    <input id="email" type="email" placeholder="example@gmail.com">
-                    <div class="button">
-                    <input type="submit" value="送出">
+                <form action="">
+                    <div class="user">
+                        <label for="name">姓名</label>
+                        <input id="name" type="text" placeholder="輸入姓名">
+                        <label for="tel">電話</label>
+                        <input id="tel" type="tel" placeholder="09-123456">
+                        <label for="email">信箱</label>
+                        <input id="email" type="email" placeholder="example@gmail.com">
+                        <div class="button">
+                        <input type="submit" value="送出">
                     </div> 
-                </div> 
+                </div>
+                </form>
             </div>
         </div>
 
         <!-- footer -->
-        <div class="logo">
+        <footer class="logo">
             <img src="./images/footerLogo.png" alt="">
             <ul>
-                <li>聯絡我們 :<span>hexschool@gmail.com</span></li>
-                <li>電話 :<span>0999123456</span></li>
+                <li>聯絡我們 :<a href="mailto:hexschool@gmail.com">hexschool@gmail.com</a></li>
+                <li>電話 :<a href="tel:0999123456">0999123456</a></li>
             </ul>
-        </div>
+        </footer>
         <div class="icon">
             <div class="fa fa-chevron-circle-up fa-3x" aria-hidden="true"></div>
         </div>
